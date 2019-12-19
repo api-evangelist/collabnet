@@ -1,0 +1,5208 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "version": "",
+        "title": "Foundation API",
+        "description": "",
+        "termsOfService": ""
+    },
+    "servers": [
+        "https\/ctfrest\/foundation\/v1"
+    ],
+    "paths": {
+        "\/appconfiguration": {
+            "patch": {
+                "summary": "Updates configuration properties",
+                "description": "Updates configuration properties.",
+                "operationId": "SetConfigurations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/appconfiguration\/by-name\/{configname}": {
+            "get": {
+                "summary": "Get value for specified configuration property",
+                "description": "Get value for specified configuration property.",
+                "operationId": "GetValueForSpecifiedConfigurationProperty",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "configname",
+                        "in": "path",
+                        "description": "configname"
+                    }
+                ]
+            }
+        },
+        "\/appconfiguration\/by-name\/{configname}\/value": {
+            "patch": {
+                "summary": "Updates the configuration value",
+                "description": "Updates the configuration value.",
+                "operationId": "UpdateConfigurationValue",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "configname",
+                        "in": "path",
+                        "description": "configname"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/approval-requests\/summary": {
+            "get": {
+                "summary": "Gets a summary of pending approval requests on TF server",
+                "description": "Gets a summary of pending approval requests on tf server.",
+                "operationId": "GetApprovalRequestSummary",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "query",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/associations": {
+            "get": {
+                "summary": "Gets the association information for the given object\/activity ids",
+                "description": "Gets the association information for the given object\/activity ids.",
+                "operationId": "GetAssociations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "Comma separated object ids"
+                    },
+                    {
+                        "name": "depth",
+                        "in": "query",
+                        "description": "Number of levels"
+                    },
+                    {
+                        "name": "includeDependencies",
+                        "in": "query",
+                        "description": "Include dependency associations (parent and child)"
+                    },
+                    {
+                        "name": "includeEvents",
+                        "in": "query",
+                        "description": "Include events"
+                    },
+                    {
+                        "name": "includePhantoms",
+                        "in": "query",
+                        "description": "Include phantom events"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of generic associations for an object"
+                    }
+                ]
+            }
+        },
+        "\/groups": {
+            "get": {
+                "summary": "Gets paginated user group list",
+                "description": "Gets paginated user group list.",
+                "operationId": "GetUserGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates user group",
+                "description": "Creates user group.",
+                "operationId": "CreateUserGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/groups\/by-name\/{name}": {
+            "get": {
+                "summary": "Gets group data by fullname",
+                "description": "Gets group data by fullname.",
+                "operationId": "GetItemByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "Group's full name"
+                    }
+                ]
+            }
+        },
+        "\/groups\/{groupid}": {
+            "get": {
+                "summary": "Gets group data by id",
+                "description": "Gets group data by id.",
+                "operationId": "GetUserGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes group data by id",
+                "description": "Deletes group data by id.",
+                "operationId": "DeleteUserGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates group data by id",
+                "description": "Updates group data by id.",
+                "operationId": "UpdateUserGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/{groupid}\/members": {
+            "get": {
+                "summary": "Gets usergroup members",
+                "description": "Gets usergroup members.",
+                "operationId": "GetUserGroupMembers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/groups\/{groupid}\/members\/{username}": {
+            "put": {
+                "summary": "Adds a user to usergroup",
+                "description": "Adds a user to usergroup.",
+                "operationId": "AddUserGroupMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes a user from usergroup",
+                "description": "Removes a user from usergroup.",
+                "operationId": "RemoveUserGroupMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/integrationdata\/by-objectid\/{objectid}\/by-name\/{namespace}": {
+            "get": {
+                "summary": "Gets integration data for an object by namespace name",
+                "description": "Gets integration data for an object by namespace name.",
+                "operationId": "GetIntegrationDataByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Sets integration data for an object by namespace name",
+                "description": "Sets integration data for an object by namespace name.",
+                "operationId": "SetIntegrationDataByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    },
+                    {
+                        "name": "createNamespace",
+                        "in": "query",
+                        "description": "Create namespace if missing?"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes integration data for an object by namespace name",
+                "description": "Removes integration data for an object by namespace name.",
+                "operationId": "RemoveIntegrationDataByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            }
+        },
+        "\/integrationdata\/by-objectid\/{objectid}\/{namespaceid}": {
+            "get": {
+                "summary": "Gets integration data for an object by namespace id",
+                "description": "Gets integration data for an object by namespace id.",
+                "operationId": "GetIntegrationData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "namespaceid",
+                        "in": "path",
+                        "description": "Namespace id"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Sets integration data for an object by namespace id",
+                "description": "Sets integration data for an object by namespace id.",
+                "operationId": "SetIntegrationData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "namespaceid",
+                        "in": "path",
+                        "description": "Namespace id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes integration data for an object by namespace id",
+                "description": "Removes integration data for an object by namespace id.",
+                "operationId": "RemoveIntegrationData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "namespaceid",
+                        "in": "path",
+                        "description": "Namespace id"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            }
+        },
+        "\/integrationdata\/myself\/by-name\/{namespace}": {
+            "get": {
+                "summary": "Gets integration data for current user by namespace name",
+                "description": "Gets integration data for current user by namespace name.",
+                "operationId": "GetMyIntegrationDataByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Sets integration data for current user by namespace name",
+                "description": "Sets integration data for current user by namespace name.",
+                "operationId": "SetMyIntegrationDataByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    },
+                    {
+                        "name": "createNamespace",
+                        "in": "query",
+                        "description": "Create namespace if missing?"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes integration data for current user by namespace name",
+                "description": "Removes integration data for current user by namespace name.",
+                "operationId": "RemoveMyIntegrationDataByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            }
+        },
+        "\/integrationdata\/myself\/{namespaceid}": {
+            "get": {
+                "summary": "Gets integration data for current user by namespace id",
+                "description": "Gets integration data for current user by namespace id.",
+                "operationId": "GetMyIntegrationData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "namespaceid",
+                        "in": "path",
+                        "description": "Namespace id"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Sets integration data for current user by namespace id",
+                "description": "Sets integration data for current user by namespace id.",
+                "operationId": "SetMyIntegrationData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "namespaceid",
+                        "in": "path",
+                        "description": "Namespace id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes integration data for current user by namespace id",
+                "description": "Removes integration data for current user by namespace id.",
+                "operationId": "RemoveMyIntegrationData",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "namespaceid",
+                        "in": "path",
+                        "description": "Namespace id"
+                    },
+                    {
+                        "name": "dataname",
+                        "in": "query",
+                        "description": "Data name"
+                    }
+                ]
+            }
+        },
+        "\/integrationdata\/namespaces": {
+            "post": {
+                "summary": "Registers namespace",
+                "description": "Registers namespace.",
+                "operationId": "RegisterNamespace",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/integrationdata\/namespaces\/by-name\/{namespace}": {
+            "get": {
+                "summary": "Gets namespace info by name",
+                "description": "Gets namespace info by name.",
+                "operationId": "GetNamespaceByName",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "namespace",
+                        "in": "path",
+                        "description": "Namespace name"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/objects\/{objectid}\/users": {
+            "get": {
+                "summary": "Returns the list of monitoring users for the object(Folder\/Item).",
+                "description": "Returns the list of monitoring users for the object(folder\/item)..",
+                "operationId": "ListUsersForObject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/users\/by-username\/{username}\/objects": {
+            "get": {
+                "summary": "Returns the list of monitoring items for the given username",
+                "description": "Returns the list of monitoring items for the given username.",
+                "operationId": "MonitoringItemsForUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "projectId",
+                        "in": "query",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Monitors \/ Unmonitors the list of objects for the given username",
+                "description": "Monitors \/ unmonitors the list of objects for the given username.",
+                "operationId": "MonitorOrUnmonitorObjectsByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "To perform action"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/users\/by-username\/{username}\/objects\/{objectid}": {
+            "get": {
+                "summary": "Monitoring the current object or not for the given username (true \/ false)",
+                "description": "Monitoring the current object or not for the given username (true \/ false).",
+                "operationId": "IsObjectMonitoredByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Monitors the current object for the given username.",
+                "description": "Monitors the current object for the given username..",
+                "operationId": "MonitorObjectByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "UnMonitors the current object for the given username.",
+                "description": "Unmonitors the current object for the given username..",
+                "operationId": "UnMonitorObjectByuser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/users\/myself\/objects": {
+            "get": {
+                "summary": "Returns the list of monitoring items for current user",
+                "description": "Returns the list of monitoring items for current user.",
+                "operationId": "MonitoringItemsForUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectId",
+                        "in": "query",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Monitors \/ Unmonitors the list of objects for current user.",
+                "description": "Monitors \/ unmonitors the list of objects for current user..",
+                "operationId": "MonitorOrUnmonitorObjectsForUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "To perform action"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/users\/myself\/objects\/{objectid}": {
+            "get": {
+                "summary": "The logged in user is monitoring the current object or not (true \/ false)",
+                "description": "The logged in user is monitoring the current object or not (true \/ false).",
+                "operationId": "IsObjectMonitored",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Monitors the current object for current user.",
+                "description": "Monitors the current object for current user..",
+                "operationId": "MonitorObjectForUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "UnMonitors the current object for the current user,",
+                "description": "Unmonitors the current object for the current user,.",
+                "operationId": "UnMonitorObject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/users\/{userid}\/objects": {
+            "get": {
+                "summary": "Returns the list of monitoring items for the given userid",
+                "description": "Returns the list of monitoring items for the given userid.",
+                "operationId": "MonitorSubforUserId",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "projectId",
+                        "in": "query",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Monitors \/ Unmonitors the list of objects for the given userid.",
+                "description": "Monitors \/ unmonitors the list of objects for the given userid..",
+                "operationId": "MonitorOrUnmonitorObjectsByUserid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "action",
+                        "in": "query",
+                        "description": "To perform action"
+                    }
+                ]
+            }
+        },
+        "\/monitoring\/users\/{userid}\/objects\/{objectid}": {
+            "get": {
+                "summary": "Monitoring the current object or not for the given user id (true \/ false)",
+                "description": "Monitoring the current object or not for the given user id (true \/ false).",
+                "operationId": "IsObjectMonitoredByUserid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Monitors the current object for the given userid.",
+                "description": "Monitors the current object for the given userid..",
+                "operationId": "MonitorObjectByUserid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "UnMonitors the current object for given userid",
+                "description": "Unmonitors the current object for given userid.",
+                "operationId": "UnMonitorObjectByid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            }
+        },
+        "\/myself\/recent\/objects": {
+            "get": {
+                "summary": "Gets recent object list for the current user",
+                "description": "Gets recent object list for the current user.",
+                "operationId": "GetMyRecentObjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            }
+        },
+        "\/myself\/recent\/projects": {
+            "get": {
+                "summary": "Gets recent project list for the current user",
+                "description": "Gets recent project list for the current user.",
+                "operationId": "GetMyRecentProjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            }
+        },
+        "\/objects\/{artifactId}\/comments\/{commentId}\/edit": {
+            "post": {
+                "summary": "Edit a comment added by the same user, on the given artifact id",
+                "description": "Edit a comment added by the same user, on the given artifact id.",
+                "operationId": "EditComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "artifactId",
+                        "in": "path",
+                        "description": "Artifact id"
+                    },
+                    {
+                        "name": "commentId",
+                        "in": "path",
+                        "description": "Comment id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/objects\/{objectid}\/associations": {
+            "get": {
+                "summary": "Gets the association information for the given object id",
+                "description": "Gets the association information for the given object id.",
+                "operationId": "GetObjectAssociations",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "depth",
+                        "in": "query",
+                        "description": "Number of levels"
+                    },
+                    {
+                        "name": "includeDependencies",
+                        "in": "query",
+                        "description": "Include dependency associations (parent and child)"
+                    },
+                    {
+                        "name": "includeEvents",
+                        "in": "query",
+                        "description": "Include events"
+                    },
+                    {
+                        "name": "includePhantoms",
+                        "in": "query",
+                        "description": "Include phantom events"
+                    },
+                    {
+                        "name": "limit",
+                        "in": "query",
+                        "description": "Maximum number of generic associations for an object"
+                    }
+                ]
+            }
+        },
+        "\/objects\/{objectid}\/associations\/{targetid}": {
+            "put": {
+                "summary": "Creates association",
+                "description": "Creates association.",
+                "operationId": "CreateAssociation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "targetid",
+                        "in": "path",
+                        "description": "Target object id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes association",
+                "description": "Deletes association.",
+                "operationId": "DeleteAssociation",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "targetid",
+                        "in": "path",
+                        "description": "Target object id"
+                    }
+                ]
+            }
+        },
+        "\/objects\/{objectid}\/auditlog": {
+            "get": {
+                "summary": "Gets a collection of audit transactions performed on the specified TeamForge object",
+                "description": "Gets a collection of audit transactions performed on the specified teamforge object.",
+                "operationId": "GetAuditLog",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            }
+        },
+        "\/objects\/{objectid}\/comments": {
+            "get": {
+                "summary": "Gets the comments on the given object id",
+                "description": "Gets the comments on the given object id.",
+                "operationId": "GetObjectComments",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Posts a comment on the given object id",
+                "description": "Posts a comment on the given object id.",
+                "operationId": "PostComment",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/objects\/{objectid}\/delivery": {
+            "get": {
+                "summary": "Gets delivery information for the given object",
+                "description": "Gets delivery information for the given object.",
+                "operationId": "GetObjectDeliveryInfo",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "objectid",
+                        "in": "path",
+                        "description": "Object id"
+                    }
+                ]
+            }
+        },
+        "\/permission\/{projectid}\/{folderPath}\/baseline": {
+            "get": {
+                "summary": "Check Baseline Permission for given project",
+                "description": "Check baseline permission for given project.",
+                "operationId": "CheckBaselinePermission",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectPath",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "folderPath",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projectgroups": {
+            "get": {
+                "summary": "Gets paginated project group list",
+                "description": "Gets paginated project group list.",
+                "operationId": "GetProjectGroups",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates project group",
+                "description": "Creates project group.",
+                "operationId": "CreateProjectGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}": {
+            "get": {
+                "summary": "Gets project group information",
+                "description": "Gets project group information.",
+                "operationId": "GetProjectGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes a project group",
+                "description": "Deletes a project group.",
+                "operationId": "DeleteProjectGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "force",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates project group data",
+                "description": "Updates project group data.",
+                "operationId": "UpdateProjectGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}\/admins": {
+            "get": {
+                "summary": "Gets project group admins",
+                "description": "Gets project group admins.",
+                "operationId": "GetProjectGroupAdmins",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}\/admins\/{username}": {
+            "put": {
+                "summary": "Adds project group admin",
+                "description": "Adds project group admin.",
+                "operationId": "AddProjectGroupAdmin",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes project group admin",
+                "description": "Removes project group admin.",
+                "operationId": "RemoveProjectGroupAdmin",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}\/members": {
+            "get": {
+                "summary": "Gets project group members",
+                "description": "Gets project group members.",
+                "operationId": "GetProjectGroupMembers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}\/members\/{username}": {
+            "put": {
+                "summary": "Adds project group member",
+                "description": "Adds project group member.",
+                "operationId": "AddProjectGroupMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes project group member",
+                "description": "Removes project group member.",
+                "operationId": "RemoveProjectGroupMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}\/projects": {
+            "get": {
+                "summary": "Gets project group projects",
+                "description": "Gets project group projects.",
+                "operationId": "GetProjectGroupProjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    }
+                ]
+            }
+        },
+        "\/projectgroups\/{projectgroupid}\/projects\/{projectid}": {
+            "put": {
+                "summary": "Adds project to project group",
+                "description": "Adds project to project group.",
+                "operationId": "AddProjectToGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes project from group",
+                "description": "Removes project from group.",
+                "operationId": "RemoveProjectFromGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectgroupid",
+                        "in": "path",
+                        "description": "Project group identifier"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects": {
+            "get": {
+                "summary": "Gets paginated project list.",
+                "description": "Gets paginated project list..",
+                "operationId": "GetProjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "fetchHierarchyPath",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    },
+                    {
+                        "name": "searchvalue",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates project",
+                "description": "Creates project.",
+                "operationId": "CreateProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/projects\/requests": {
+            "get": {
+                "summary": "Gets paginated project request list",
+                "description": "Gets paginated project request list.",
+                "operationId": "GetProjectRequests",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            }
+        },
+        "\/projects\/requests\/count": {
+            "get": {
+                "summary": "Gets the number of pending project requests",
+                "description": "Gets the number of pending project requests.",
+                "operationId": "GetProjectRequestCount",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/projects\/{projectid}": {
+            "get": {
+                "summary": "Gets project information",
+                "description": "Gets project information.",
+                "operationId": "GetProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes a project",
+                "description": "Deletes a project.",
+                "operationId": "DeleteItem",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "notify",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "force",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates project data",
+                "description": "Updates project data.",
+                "operationId": "UpdateProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/admins": {
+            "get": {
+                "summary": "Gets project administrators",
+                "description": "Gets project administrators.",
+                "operationId": "GetProjectAdmins",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/diskusage": {
+            "get": {
+                "summary": "Gets project disk usage in bytes",
+                "description": "Gets project disk usage in bytes.",
+                "operationId": "GetProjectDiskUsage",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/lock": {
+            "put": {
+                "summary": "Locks a project",
+                "description": "Locks a project.",
+                "operationId": "LockProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Unlocks a project",
+                "description": "Unlocks a project.",
+                "operationId": "UnlockProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/members": {
+            "get": {
+                "summary": "Gets project members",
+                "description": "Gets project members.",
+                "operationId": "GetProjectMembers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    },
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "searchvalue",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles": {
+            "get": {
+                "summary": "Gets project role list",
+                "description": "Gets project role list.",
+                "operationId": "GetProjectRoles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "includeInherited",
+                        "in": "query",
+                        "description": "Include inherited roles? This parameter is relevant for 'Project' type only"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates project role.",
+                "description": "Creates project role..",
+                "operationId": "CreateProjectRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles\/by-users": {
+            "post": {
+                "summary": "Get roles by user",
+                "description": "Get roles by user.",
+                "operationId": "GetRolesByUsers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles\/inherited-roles": {
+            "get": {
+                "summary": "Gets inherited project role list",
+                "description": "Gets inherited project role list.",
+                "operationId": "GetInheritedProjectRoles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles\/{roleid}": {
+            "delete": {
+                "summary": "Deletes a project role",
+                "description": "Deletes a project role.",
+                "operationId": "DeleteProjectRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates project role.",
+                "description": "Updates project role..",
+                "operationId": "UpdateProjectRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles\/{roleid}\/auto-grant": {
+            "get": {
+                "summary": "Gets whether a role is granted automatically in a project or not.",
+                "description": "Gets whether a role is granted automatically in a project or not..",
+                "operationId": "IsRoleAutoGrantInProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "summary": "Grant a role automatically in a given project",
+                "description": "Grant a role automatically in a given project.",
+                "operationId": "AutoGrantRoleInProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Stop granting a role automatically in a given project",
+                "description": "Stop granting a role automatically in a given project.",
+                "operationId": "RemoveAutoGrantRoleInProject",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles\/{roleid}\/members": {
+            "get": {
+                "summary": "Gets project role members",
+                "description": "Gets project role members.",
+                "operationId": "GetProjectRoleMembers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/roles\/{roleid}\/members\/{username}": {
+            "put": {
+                "summary": "Add user to project role",
+                "description": "Add user to project role.",
+                "operationId": "AddUserToProjectRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes user from a project role",
+                "description": "Removes user from a project role.",
+                "operationId": "RemoveUserFromProjectRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/subprojects": {
+            "get": {
+                "summary": "Gets subproject list.",
+                "description": "Gets subproject list..",
+                "operationId": "GetSubprojects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "fetchHierarchyPath",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/projects\/{projectid}\/{username}": {
+            "put": {
+                "summary": "Adds project member",
+                "description": "Adds project member.",
+                "operationId": "AddProjectMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes project member",
+                "description": "Removes project member.",
+                "operationId": "RemoveProjectMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/projecttemplates": {
+            "get": {
+                "summary": "Gets paginated project template list.",
+                "description": "Gets paginated project template list..",
+                "operationId": "GetProjectTemplates",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            }
+        },
+        "\/roles": {
+            "get": {
+                "summary": "Gets global\/site role list",
+                "description": "Gets global\/site role list.",
+                "operationId": "GetRoles",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "type",
+                        "in": "query",
+                        "description": "Role type"
+                    },
+                    {
+                        "name": "projectId",
+                        "in": "query",
+                        "description": "Project identifier"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates role.",
+                "description": "Creates role..",
+                "operationId": "CreateRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/roles\/{roleid}": {
+            "get": {
+                "summary": "Gets role data.",
+                "description": "Gets role data..",
+                "operationId": "GetRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes a role",
+                "description": "Deletes a role.",
+                "operationId": "DeleteRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates role.",
+                "description": "Updates role..",
+                "operationId": "UpdateRole",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/roles\/{roleid}\/members": {
+            "get": {
+                "summary": "Gets role members",
+                "description": "Gets role members.",
+                "operationId": "GetRoleMembers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/roles\/{roleid}\/members\/{username}": {
+            "put": {
+                "summary": "Add user to a role",
+                "description": "Add user to a role.",
+                "operationId": "AddRoleMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Removes user from a role",
+                "description": "Removes user from a role.",
+                "operationId": "RemoveRoleMember",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "roleid",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/server": {
+            "get": {
+                "summary": "Gets TeamForge server information",
+                "description": "Gets teamforge server information.",
+                "operationId": "GetTeamForgeServerInfo",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/server\/health": {
+            "get": {
+                "summary": "Gets the health of the CTF core",
+                "description": "Gets the health of the ctf core.",
+                "operationId": "GetHealth",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "verbose",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "thorough",
+                        "in": "query",
+                        "description": ""
+                    },
+                    {
+                        "name": "assumeactive",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/server\/licensekey": {
+            "put": {
+                "summary": "Sets\/Updates license key",
+                "description": "Sets\/updates license key.",
+                "operationId": "EnterLicenseKey",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/server\/licensetypes": {
+            "get": {
+                "summary": "Gets valid license types",
+                "description": "Gets valid license types.",
+                "operationId": "GetLicenseTypes",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users": {
+            "get": {
+                "summary": "Gets paginated user list",
+                "description": "Gets paginated user list.",
+                "operationId": "GetUsers",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "ids",
+                        "in": "query",
+                        "description": "Comma separated object ids"
+                    },
+                    {
+                        "name": "names",
+                        "in": "query",
+                        "description": "List of usernames (separated by comma)"
+                    },
+                    {
+                        "name": "search",
+                        "in": "query",
+                        "description": "Comma separated terms to search in username, fullname fields"
+                    },
+                    {
+                        "name": "status",
+                        "in": "query",
+                        "description": "User status"
+                    },
+                    {
+                        "name": "offset",
+                        "in": "query",
+                        "description": "Offset"
+                    },
+                    {
+                        "name": "count",
+                        "in": "query",
+                        "description": "Max. number of groups to be returned in one call"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Creates a user",
+                "description": "Creates a user.",
+                "operationId": "CreateUser",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/by-email\/{email}": {
+            "get": {
+                "summary": "Gets user data by email",
+                "description": "Gets user data by email.",
+                "operationId": "GetUserByEmail",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "email",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}": {
+            "get": {
+                "summary": "Gets user data by username",
+                "description": "Gets user data by username.",
+                "operationId": "GetUserByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes a user by username",
+                "description": "Deletes a user by username.",
+                "operationId": "DeleteUserByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates a user by username",
+                "description": "Updates a user by username.",
+                "operationId": "UpdateUserByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/alternative-licensetypes": {
+            "get": {
+                "summary": "Gets alternative license types by username.",
+                "description": "Gets alternative license types by username..",
+                "operationId": "GetLicenseByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/authorization-keys": {
+            "get": {
+                "summary": "Gets authorization keys by username",
+                "description": "Gets authorization keys by username.",
+                "operationId": "GetAuthorizationKeysByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Sets authorization keys by username",
+                "description": "Sets authorization keys by username.",
+                "operationId": "SetAuthorizationKeys",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/groups": {
+            "get": {
+                "summary": "Gets a user's group list by username",
+                "description": "Gets a user's group list by username.",
+                "operationId": "GetUserGroupsByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/groups\/{groupid}": {
+            "put": {
+                "summary": "Add user to a user group by user name",
+                "description": "Add user to a user group by user name.",
+                "operationId": "AddUserToGroupByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/password": {
+            "patch": {
+                "summary": "Resets user password by username",
+                "description": "Resets user password by username.",
+                "operationId": "ResetPasswordByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/preferences": {
+            "get": {
+                "summary": "Gets preferences by username",
+                "description": "Gets preferences by username.",
+                "operationId": "GetPreferences",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Sets preferences by user name",
+                "description": "Sets preferences by user name.",
+                "operationId": "SetPreferences",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/preferences\/{preference}": {
+            "get": {
+                "summary": "Gets preference by username",
+                "description": "Gets preference by username.",
+                "operationId": "GetPreference",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "preference",
+                        "in": "path",
+                        "description": "Preference"
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/profile-picture": {
+            "post": {
+                "summary": "Uploads and sets profile picture by username",
+                "description": "Uploads and sets profile picture by username.",
+                "operationId": "SetProfilePictureByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes profile picture by username",
+                "description": "Deletes profile picture by username.",
+                "operationId": "DeleteProfilePictureByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/projects": {
+            "get": {
+                "summary": "Gets a user's project list by username",
+                "description": "Gets a user's project list by username.",
+                "operationId": "GetProjectsByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "fetchHierarchyPath",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/by-username\/{username}\/projects\/{projectid}": {
+            "put": {
+                "summary": "Adds a user to specified project's member list by username",
+                "description": "Adds a user to specified project's member list by username.",
+                "operationId": "AddUserByUsername",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "username",
+                        "in": "path",
+                        "description": ""
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/users\/myself": {
+            "get": {
+                "summary": "Gets user data for current user",
+                "description": "Gets user data for current user.",
+                "operationId": "GetMyself",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "patch": {
+                "summary": "Updates current user data",
+                "description": "Updates current user data.",
+                "operationId": "UpdateMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/alternative-licensetypes": {
+            "get": {
+                "summary": "Gets alternative license types for current user.",
+                "description": "Gets alternative license types for current user..",
+                "operationId": "GetLicenseForMyself",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/myself\/authorization-keys": {
+            "get": {
+                "summary": "Gets authorization keys for current user",
+                "description": "Gets authorization keys for current user.",
+                "operationId": "GetAuthorizationKeysForMyself",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "post": {
+                "summary": "Sets authorization keys for current user",
+                "description": "Sets authorization keys for current user.",
+                "operationId": "SetAuthorizationKeysForMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/groups": {
+            "get": {
+                "summary": "Gets current user's group list",
+                "description": "Gets current user's group list.",
+                "operationId": "GetMyUserGroups",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/myself\/groups\/{groupid}": {
+            "put": {
+                "summary": "Add current user to a user group",
+                "description": "Add current user to a user group.",
+                "operationId": "AddMyselfToGroup",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/password": {
+            "patch": {
+                "summary": "Resets user password for current user",
+                "description": "Resets user password for current user.",
+                "operationId": "ResetPasswordForMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/preferences": {
+            "get": {
+                "summary": "Gets preferences for current user",
+                "description": "Gets preferences for current user.",
+                "operationId": "GetPreferencesForMyself",
+                "deprecated": 0,
+                "parameters": []
+            },
+            "patch": {
+                "summary": "Sets preferences for current user",
+                "description": "Sets preferences for current user.",
+                "operationId": "SetPreferencesForMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/preferences\/{preference}": {
+            "get": {
+                "summary": "Gets preference for current user",
+                "description": "Gets preference for current user.",
+                "operationId": "GetPreferenceForMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "preference",
+                        "in": "path",
+                        "description": "Preference"
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/profile-picture": {
+            "post": {
+                "summary": "Uploads and sets profile picture for current user",
+                "description": "Uploads and sets profile picture for current user.",
+                "operationId": "SetProfilePictureForMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes profile picture for current user",
+                "description": "Deletes profile picture for current user.",
+                "operationId": "DeleteProfilePictureForMyself",
+                "deprecated": 0,
+                "parameters": []
+            }
+        },
+        "\/users\/myself\/projects": {
+            "get": {
+                "summary": "Gets current user's project list",
+                "description": "Gets current user's project list.",
+                "operationId": "GetMyProjects",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "fetchHierarchyPath",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/myself\/projects\/{projectid}": {
+            "put": {
+                "summary": "Adds current user to specified project's member list",
+                "description": "Adds current user to specified project's member list.",
+                "operationId": "AddMyself",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}": {
+            "get": {
+                "summary": "Gets user data by user id",
+                "description": "Gets user data by user id.",
+                "operationId": "GetUserById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes a user by user id",
+                "description": "Deletes a user by user id.",
+                "operationId": "DeleteUserById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Updates a user by user id",
+                "description": "Updates a user by user id.",
+                "operationId": "UpdateUserById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    },
+                    {
+                        "name": "If",
+                        "in": "header",
+                        "description": "Group version"
+                    },
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/alternative-licensetypes": {
+            "get": {
+                "summary": "Gets alternative license types by userid.",
+                "description": "Gets alternative license types by userid..",
+                "operationId": "GetLicenseById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/authorization-keys": {
+            "get": {
+                "summary": "Gets authorization keys by user id",
+                "description": "Gets authorization keys by user id.",
+                "operationId": "GetAuthorizationKeysById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            },
+            "post": {
+                "summary": "Sets authorization keys by user id",
+                "description": "Sets authorization keys by user id.",
+                "operationId": "SetAuthorizationKeysById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/groups": {
+            "get": {
+                "summary": "Gets a user's group list by user id",
+                "description": "Gets a user's group list by user id.",
+                "operationId": "GetUserGroupsByUserid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/groups\/{groupid}": {
+            "put": {
+                "summary": "Add user to a user group by user id",
+                "description": "Add user to a user group by user id.",
+                "operationId": "AddUserToGroupByUserid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "groupid",
+                        "in": "path",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/password": {
+            "patch": {
+                "summary": "Resets user password by userid",
+                "description": "Resets user password by userid.",
+                "operationId": "ResetPasswordById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/preferences": {
+            "get": {
+                "summary": "Gets preferences by user id",
+                "description": "Gets preferences by user id.",
+                "operationId": "GetPreferencesById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            },
+            "patch": {
+                "summary": "Sets preferences by user id",
+                "description": "Sets preferences by user id.",
+                "operationId": "SetPreferencesById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/preferences\/{preference}": {
+            "get": {
+                "summary": "Gets preference by user id",
+                "description": "Gets preference by user id.",
+                "operationId": "GetPreferenceById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "preference",
+                        "in": "path",
+                        "description": "Preference"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/profile-picture": {
+            "post": {
+                "summary": "Uploads and sets profile picture by user id",
+                "description": "Uploads and sets profile picture by user id.",
+                "operationId": "SetProfilePictureById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "List of configuration properties"
+                    }
+                ]
+            },
+            "delete": {
+                "summary": "Deletes profile picture by user id",
+                "description": "Deletes profile picture by user id.",
+                "operationId": "DeleteProfilePictureById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/projects": {
+            "get": {
+                "summary": "Gets a user's project list by user id",
+                "description": "Gets a user's project list by user id.",
+                "operationId": "GetProjectsByUserid",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "sortby",
+                        "in": "query",
+                        "description": "Sort by column name"
+                    },
+                    {
+                        "name": "fetchHierarchyPath",
+                        "in": "query",
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/users\/{userid}\/projects\/{projectid}": {
+            "put": {
+                "summary": "Adds a user to specified project's member list by user id",
+                "description": "Adds a user to specified project's member list by user id.",
+                "operationId": "AddUserById",
+                "deprecated": 0,
+                "parameters": [
+                    {
+                        "name": "userid",
+                        "in": "path",
+                        "description": "User id"
+                    },
+                    {
+                        "name": "projectid",
+                        "in": "path",
+                        "description": "Project identifier"
+                    }
+                ]
+            }
+        }
+    },
+    "components": {
+        "schemas": {
+            "AbstractEntity": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "AssociationInfoEntity": {
+                "type": "object",
+                "properties": {
+                    "associatedBy": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "associatedByFullName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "associatedDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "editable": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "infos": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "AssociationVersionInfoEntity": {
+                "type": "object",
+                "properties": {
+                    "ctfId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Associations": {
+                "type": "object",
+                "properties": {
+                    "associations": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "objectSummaries": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "levels": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "associationCount": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "errors": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "AssociationsEntity": {
+                "type": "object",
+                "properties": {
+                    "genericAssociations": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "parentAssociations": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "childAssociations": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Audit Change": {
+                "type": "object",
+                "properties": {
+                    "propertyName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "propertyType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "oldValue": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "newValue": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "flexField": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "oldValueData": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "newValueData": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Audit Operation": {
+                "type": "object",
+                "properties": {
+                    "operation": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "dateCreated": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "changes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Audit Transaction": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "objectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdByUsername": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdByFullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "dateCreated": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "operations": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "comments": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "AuditTransactionsEntity": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Collection of projects": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Collection of role objects": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Collection of users": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Comments": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "CreateAssociationEntity": {
+                "type": "object",
+                "properties": {
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "originTitle": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "targetTitle": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Delivery manifest": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "progressions": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Delivery package": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "versions": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Delivery package version": {
+                "type": "object",
+                "properties": {
+                    "version": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "phase_info": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "latest_phase_name": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Delivery progression": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "phase_names": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "packages": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "url": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "ErrorEntity": {
+                "type": "object",
+                "properties": {
+                    "code": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "message": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetAppConfigValue": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetAuthorizationKeysEntity": {
+                "type": "object",
+                "properties": {
+                    "keys": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetLicenseEntity": {
+                "type": "object",
+                "properties": {
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetPreferenceEntity": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetProjectGroupMembersEntity": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetProjectMembersEntity": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetRolesByUser": {
+                "type": "object",
+                "properties": {
+                    "userNames": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetUserGroupEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GetUserMonitor": {
+                "type": "object",
+                "properties": {
+                    "userId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Group members": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "GuidKey": {
+                "type": "object",
+                "properties": {
+                    "guid": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "prefix": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "InputPart": {
+                "type": "object",
+                "properties": {
+                    "bodyAsString": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "contentTypeFromMessage": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "headers": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "IntegrationData": {
+                "type": "object",
+                "properties": {
+                    "namedValues": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Link": {
+                "type": "object",
+                "properties": {
+                    "href": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "method": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "templated": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "MediaType": {
+                "type": "object",
+                "properties": {
+                    "type": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "subtype": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "parameters": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "wildcardType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "wildcardSubtype": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "MonitorItems": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "MonitoredObjects": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "MonitoringUsers": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "MultipartFormDataInput": {
+                "type": "object",
+                "properties": {
+                    "formDataMap": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "formData": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "parts": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preamble": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "NamedValue": {
+                "type": "object",
+                "properties": {
+                    "key": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Namespace": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "namespaceId": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "ObjectSummaryEntity": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdByFullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastModifiedDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "version": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "statusClass": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "objectType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "objectTypeSourceName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "canEdit": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "tfProjectName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "eventId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "remoteId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "customData": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "deleted": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "phantom": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "teamForgeId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchConfiguration": {
+                "type": "object",
+                "properties": {
+                    "surrogateId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "application": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "valueType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "label": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "displayType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "helpText": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "noteText": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fieldValues": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchConfigurations": {
+                "type": "object",
+                "properties": {
+                    "properties": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchPreference": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "value": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchPreferences": {
+                "type": "object",
+                "properties": {
+                    "preferences": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchProject": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "accessLevel": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchProjectGroup": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchRole": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preventInheritance": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "requestable": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchUser": {
+                "type": "object",
+                "properties": {
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "alternateEmail1": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "alternateEmail2": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "alternateEmail3": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "organization": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "superUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "restrictedUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "localUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "licenseTypes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timezone": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PatchUserGroup": {
+                "type": "object",
+                "properties": {
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PostAuthorizationKeys": {
+                "type": "object",
+                "properties": {
+                    "keys": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PostProject": {
+                "type": "object",
+                "properties": {
+                    "name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "accessLevel": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PostProjectGroup": {
+                "type": "object",
+                "properties": {
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PostRole": {
+                "type": "object",
+                "properties": {
+                    "roleType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preventInheritance": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "requestable": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "autoGrant": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PostUser": {
+                "type": "object",
+                "properties": {
+                    "userName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "organization": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "superUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "restrictedUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "localUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "licenseTypes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timezone": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "password": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "PostUserGroup": {
+                "type": "object",
+                "properties": {
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Progression Phase Info": {
+                "type": "object",
+                "properties": {
+                    "phase_name": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "revision": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "full_version": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "in_dt": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "out_dt": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "revision_url": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastModifiedBy": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastModifiedDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "parentProjectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hierarchyPath": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "locked": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "templateId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "accessLevel": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project Groups": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project Request": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdByUsername": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdByFullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "homePage": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preserveHtmlHead": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project Requests": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project group": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "dateCreated": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project group association": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project group associations": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project group member": {
+                "type": "object",
+                "properties": {
+                    "userName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "admin": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Project member": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "ProjectApprovalRequestSummary": {
+                "type": "object",
+                "properties": {
+                    "projectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectPath": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectTitle": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "typeSummaries": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Projects": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "RecentObject": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "RecentObjects": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "RecentProject": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "path": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "RecentProjects": {
+                "type": "object",
+                "properties": {
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Role": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "title": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdInProjectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "roleType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "preventInheritance": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "requestable": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "ServerApprovalRequestSummary": {
+                "type": "object",
+                "properties": {
+                    "typeSummaries": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectSummaries": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "requestCount": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "TFServer": {
+                "type": "object",
+                "properties": {
+                    "version": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "hostedMode": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "broadcast": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "broadcastHidable": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "serverTime": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "serverTimezoneOffset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "canEditBroadcast": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "TypeApprovalRequestSummary": {
+                "type": "object",
+                "properties": {
+                    "requestType": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "requestCount": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "User": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "userName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "email": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "alternateEmail1": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "alternateEmail2": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "alternateEmail3": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "fullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "organization": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "superUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "restrictedUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "localUser": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "status": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "licenseTypes": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastLogin": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "timezone": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "locale": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "Pending email change request": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "User Role Matrix": {
+                "type": "object",
+                "properties": {
+                    "userRoleMap": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "User groups": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Users Groups": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "Users": {
+                "type": "object",
+                "properties": {
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "items": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "paged": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "offset": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "pageSize": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "total": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "comment": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "objectId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdBy": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdByFullname": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "createdDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "description": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "transactionId": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            },
+            "monitor": {
+                "type": "object",
+                "properties": {
+                    "objectKey": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "objectTitle": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "typeName": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "isFolder": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "lastModifiedDate": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectTitle": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "projectPath": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_links": {
+                        "description": "",
+                        "type": "put"
+                    },
+                    "_embedded": {
+                        "description": "",
+                        "type": "put"
+                    }
+                }
+            }
+        }
+    }
+}
