@@ -1,0 +1,64 @@
+{
+    "name": "CollabNet",
+    "description": "CollabNet is a software development and delivery solutions provider headquartered in South San Francisco, California.",
+    "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28840-community-versionone-com.jpg",
+    "tags": [
+        "have api",
+        "orchestration"
+    ],
+    "created": "2019-12-19",
+    "modified": "2019-12-19",
+    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/collabnet\/master\/apis.json",
+    "specificationVersion": "0.14",
+    "apis": [
+        {
+            "name": "Foundation API",
+            "description": null,
+            "image": "http:\/\/kinlane-productions.s3.amazonaws.com\/screen-capture-api\/28840-community-versionone-com.jpg",
+            "humanURL": "https:\/\/www.collab.net\/",
+            "baseURL": "",
+            "tags": [],
+            "properties": [
+                {
+                    "type": "x-openapi",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/foundation-api-openapi.json"
+                },
+                {
+                    "type": "x-openapi",
+                    "url": "http:\/\/kinlane-productions.s3.amazonaws.com\/api-evangelist-site\/company\/openapis\/foundation-api.json"
+                },
+                {
+                    "type": "x-postman-collecction",
+                    "url": "https:\/\/raw.githubusercontent.com\/api-evangelist\/1forge\/master\/foundation-api-postman-collection.json"
+                }
+            ]
+        }
+    ],
+    "include": [],
+    "x-common": [
+        {
+            "type": "Crunchbase",
+            "url": "https:\/\/crunchbase.com\/organization\/collabnet"
+        },
+        {
+            "type": "Email",
+            "url": "trademarks@collab.net"
+        },
+        {
+            "type": "Email",
+            "url": "legal@collab.net"
+        },
+        {
+            "type": "Email",
+            "url": "cnsupport@collab.net"
+        },
+        {
+            "type": "Twitter",
+            "url": "https:\/\/twitter.com\/CollabNet"
+        },
+        {
+            "type": "Website",
+            "url": "https:\/\/www.collab.net\/"
+        }
+    ]
+}
