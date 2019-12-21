@@ -1,5 +1,5 @@
 {
-    "id": "391d9795ff9867036a137ee23ab08089",
+    "id": "97f5d8a1e7b0229b17fa35d82dd2450e",
     "name": "Foundation API",
     "description": null,
     "auth": null,
@@ -10,7 +10,7 @@
     "folders": [],
     "requests": [
         {
-            "id": "917856a5de812c7ae9092342670aea1a",
+            "id": "5f14cc9a2fd5722e8a4e6008b46c965f",
             "name": "Updates configuration properties",
             "url": "https\/ctfrest\/foundation\/v1\/appconfiguration",
             "description": "Updates configuration properties.",
@@ -37,11 +37,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a0aededa6aab12246c25dc1a4120f2d5",
+            "id": "c00aa99b2fabe153663efa869d78beee",
             "name": "Get value for specified configuration property",
             "url": "https\/ctfrest\/foundation\/v1\/appconfiguration\/by-name\/{configname}",
             "description": "Get value for specified configuration property.",
@@ -68,11 +68,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d8d16f345a61e325e9db0132fcf8d918",
+            "id": "b869be74bb1668993048f80d0ba82e38",
             "name": "Updates the configuration value",
             "url": "https\/ctfrest\/foundation\/v1\/appconfiguration\/by-name\/{configname}\/value",
             "description": "Updates the configuration value.",
@@ -106,11 +106,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "50beb2e2949f7eacd4d2779c5ea3c6cf",
+            "id": "09cfeb2307ecaeb792f1c8d828227d17",
             "name": "Gets a summary of pending approval requests on TF server",
             "url": "https\/ctfrest\/foundation\/v1\/approval-requests\/summary",
             "description": "Gets a summary of pending approval requests on tf server.",
@@ -137,11 +137,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "feb9853391d778ba39ab9eb9011d6184",
+            "id": "2b4b74c79346d30d219cd96ccd2eeaab",
             "name": "Gets the association information for the given object\/activity ids",
             "url": "https\/ctfrest\/foundation\/v1\/associations",
             "description": "Gets the association information for the given object\/activity ids.",
@@ -203,11 +203,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "539beb6111a9bc0d87b83055e7f79562",
+            "id": "161d8d47f2b0c9df66287cb9279b531a",
             "name": "Gets paginated user group list",
             "url": "https\/ctfrest\/foundation\/v1\/groups",
             "description": "Gets paginated user group list.",
@@ -248,11 +248,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "74a05357e67903504ad95bf3adfb6c16",
+            "id": "4bcb6cefb452bc94f9e189685fdba343",
             "name": "Creates user group",
             "url": "https\/ctfrest\/foundation\/v1\/groups",
             "description": "Creates user group.",
@@ -279,11 +279,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d8630569871d375c29d50e51d36e0b60",
+            "id": "9246953e8ac2d07dcabdff7c42b4ce2d",
             "name": "Gets group data by fullname",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/by-name\/{name}",
             "description": "Gets group data by fullname.",
@@ -310,11 +310,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a0afcc8006426476b2873fdf61ecf1ae",
+            "id": "5b57f6f731e98fecc5e3e03516b80451",
             "name": "Gets group data by id",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/{groupid}",
             "description": "Gets group data by id.",
@@ -341,11 +341,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "e20dc4353cbfe47300038126035635e0",
+            "id": "16c79759e6ebb9ec278bd6978c83ae7b",
             "name": "Deletes group data by id",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/{groupid}",
             "description": "Deletes group data by id.",
@@ -372,11 +372,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "adc2a051515b6e71663b4c2d26cb1792",
+            "id": "62cf2208824e74ffb169ac92fc4eacbe",
             "name": "Updates group data by id",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/{groupid}",
             "description": "Updates group data by id.",
@@ -417,11 +417,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "b7437e7d896c63e00ff33a29955246f4",
+            "id": "25c459f6b152c96f692cca12b186e60a",
             "name": "Gets usergroup members",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/{groupid}\/members",
             "description": "Gets usergroup members.",
@@ -448,11 +448,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "93fd5a3fbf1b8e28c3b3e4ddee15cc64",
+            "id": "679209710d6066d8a885b2961af88b19",
             "name": "Adds a user to usergroup",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/{groupid}\/members\/{username}",
             "description": "Adds a user to usergroup.",
@@ -486,11 +486,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "8a10fa18207b2fc9de4e1dff5b592dc0",
+            "id": "29bab7613c3c0cfa9a97243462a16697",
             "name": "Removes a user from usergroup",
             "url": "https\/ctfrest\/foundation\/v1\/groups\/{groupid}\/members\/{username}",
             "description": "Removes a user from usergroup.",
@@ -524,11 +524,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "b4c076da202cfaab71e27d1ccaf6c53f",
+            "id": "9aec27eeb8bd3d238b13219b7a71a168",
             "name": "Gets integration data for an object by namespace name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/by-objectid\/{objectid}\/by-name\/{namespace}",
             "description": "Gets integration data for an object by namespace name.",
@@ -569,11 +569,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "cd5fea26348b4d981d9b75e6f09a7255",
+            "id": "ff7e147e5c52d45a58dbd84fffd63d42",
             "name": "Sets integration data for an object by namespace name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/by-objectid\/{objectid}\/by-name\/{namespace}",
             "description": "Sets integration data for an object by namespace name.",
@@ -621,11 +621,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "956271a6e47162adc3ee7057cd5db648",
+            "id": "d6ade6e9631624d94471a50318357dc5",
             "name": "Removes integration data for an object by namespace name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/by-objectid\/{objectid}\/by-name\/{namespace}",
             "description": "Removes integration data for an object by namespace name.",
@@ -666,11 +666,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "f4f96bc3ef0903fa3492ff7ac5784523",
+            "id": "5f7b0110476868e1a06375fe8b5de1cb",
             "name": "Gets integration data for an object by namespace id",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/by-objectid\/{objectid}\/{namespaceid}",
             "description": "Gets integration data for an object by namespace id.",
@@ -711,11 +711,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "3bce063afcc060dd7d175a1cbc7f336e",
+            "id": "72d72ce8c55d3c4f78b7cc53f81750d2",
             "name": "Sets integration data for an object by namespace id",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/by-objectid\/{objectid}\/{namespaceid}",
             "description": "Sets integration data for an object by namespace id.",
@@ -756,11 +756,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "109f363b9ef261e0e3bf43fd2becac17",
+            "id": "c3fda9d1cb57929292d1bf28cebaf322",
             "name": "Removes integration data for an object by namespace id",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/by-objectid\/{objectid}\/{namespaceid}",
             "description": "Removes integration data for an object by namespace id.",
@@ -801,11 +801,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "71e860381d97c474dd55cefceee98b52",
+            "id": "94e4f133a2ee3256a2210a34049b021d",
             "name": "Gets integration data for current user by namespace name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/myself\/by-name\/{namespace}",
             "description": "Gets integration data for current user by namespace name.",
@@ -839,11 +839,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "add46e54bbe4431049251c534ebcb09b",
+            "id": "3e558b4aa6ef97e7c51325ad3ad9e902",
             "name": "Sets integration data for current user by namespace name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/myself\/by-name\/{namespace}",
             "description": "Sets integration data for current user by namespace name.",
@@ -884,11 +884,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9e9fd6f3a1bbe2030aa6a8f957c30bca",
+            "id": "cf5910aeca827f718d9c5b5d5555ea07",
             "name": "Removes integration data for current user by namespace name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/myself\/by-name\/{namespace}",
             "description": "Removes integration data for current user by namespace name.",
@@ -922,11 +922,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "02b590ea2de2c8894fd986547c3473d7",
+            "id": "2d8492583733d66682f3b7cab08c4a3d",
             "name": "Gets integration data for current user by namespace id",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/myself\/{namespaceid}",
             "description": "Gets integration data for current user by namespace id.",
@@ -960,11 +960,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9f15c712f11c5cda0ca53d374720057b",
+            "id": "6ea10d20eb3a3700dc0894bd559c0922",
             "name": "Sets integration data for current user by namespace id",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/myself\/{namespaceid}",
             "description": "Sets integration data for current user by namespace id.",
@@ -998,11 +998,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "bdac82b38d08abd62be517a6d1f08a79",
+            "id": "e5422907d98979781c485ba93d14dbb5",
             "name": "Removes integration data for current user by namespace id",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/myself\/{namespaceid}",
             "description": "Removes integration data for current user by namespace id.",
@@ -1036,11 +1036,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "6e2fda880bc48cc968b45150f366f05f",
+            "id": "a0754a3ea556ab5eaf555a9cda4592cd",
             "name": "Registers namespace",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/namespaces",
             "description": "Registers namespace.",
@@ -1067,11 +1067,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d457197510f8fee775269d66e4727f12",
+            "id": "d8c693cf1b5f842890469ee540a6549e",
             "name": "Gets namespace info by name",
             "url": "https\/ctfrest\/foundation\/v1\/integrationdata\/namespaces\/by-name\/{namespace}",
             "description": "Gets namespace info by name.",
@@ -1098,11 +1098,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "31b551d1b7259d601117020220cfed49",
+            "id": "3b516fe6e31c0d719f7153ef7f853bf9",
             "name": "Returns the list of monitoring users for the object(Folder\/Item).",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/objects\/{objectid}\/users",
             "description": "Returns the list of monitoring users for the object(folder\/item)..",
@@ -1143,11 +1143,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "fc20400e7d4772b3e58c61094dd15797",
+            "id": "2486faa5e4e8b400c58e493e73a3eab0",
             "name": "Returns the list of monitoring items for the given username",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/by-username\/{username}\/objects",
             "description": "Returns the list of monitoring items for the given username.",
@@ -1195,11 +1195,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "26703bc0f036eac922f9f805c982d550",
+            "id": "7854e3bd80a951418031b34dc4458afa",
             "name": "Monitors \/ Unmonitors the list of objects for the given username",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/by-username\/{username}\/objects",
             "description": "Monitors \/ unmonitors the list of objects for the given username.",
@@ -1240,11 +1240,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "0f459885b5b99c99230b3190b44e8243",
+            "id": "2b77b7e27937b62bbdab0b4dd1e8ad52",
             "name": "Monitoring the current object or not for the given username (true \/ false)",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/by-username\/{username}\/objects\/{objectid}",
             "description": "Monitoring the current object or not for the given username (true \/ false).",
@@ -1278,11 +1278,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "8c7d26fd42df18e6b2ea24be29465749",
+            "id": "f4cbdac6ad8a469edf1fff302424265c",
             "name": "Monitors the current object for the given username.",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/by-username\/{username}\/objects\/{objectid}",
             "description": "Monitors the current object for the given username..",
@@ -1316,11 +1316,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a5b7321e2d066aed2a8c35225222fcf2",
+            "id": "5bfa855b153baf6cac0ce29320601e0a",
             "name": "UnMonitors the current object for the given username.",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/by-username\/{username}\/objects\/{objectid}",
             "description": "Unmonitors the current object for the given username..",
@@ -1354,11 +1354,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "2ba0fdb8d8dc3e4fc47d02fe1f95d3bd",
+            "id": "498c1c749b90264d49f1d75ec725a31d",
             "name": "Returns the list of monitoring items for current user",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/myself\/objects",
             "description": "Returns the list of monitoring items for current user.",
@@ -1399,11 +1399,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "92c7ba5a7e62209ad35a2c01b1c2a3d7",
+            "id": "4f1f75cfaf4483ae4297c0d248f84d94",
             "name": "Monitors \/ Unmonitors the list of objects for current user.",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/myself\/objects",
             "description": "Monitors \/ unmonitors the list of objects for current user..",
@@ -1437,11 +1437,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9aa65f9eb073ce1c4eddb8468125f5ed",
+            "id": "2c8cdcb577c0d4b22225131772c35867",
             "name": "The logged in user is monitoring the current object or not (true \/ false)",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/myself\/objects\/{objectid}",
             "description": "The logged in user is monitoring the current object or not (true \/ false).",
@@ -1468,11 +1468,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "f5a68174d5c2aa27245be340ab961e9c",
+            "id": "e16284d9bd73b510d1145307eae99cd7",
             "name": "Monitors the current object for current user.",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/myself\/objects\/{objectid}",
             "description": "Monitors the current object for current user..",
@@ -1499,11 +1499,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c07095c3a594f7e39f24b90febdfc4c5",
+            "id": "a533c5c81c36ad7c49e63cdc096c6cec",
             "name": "UnMonitors the current object for the current user,",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/myself\/objects\/{objectid}",
             "description": "Unmonitors the current object for the current user,.",
@@ -1530,11 +1530,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a838bf075cee2e47796d7b53a9bce0eb",
+            "id": "d41a2356eeba73a1ca10eafaff7bf884",
             "name": "Returns the list of monitoring items for the given userid",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/{userid}\/objects",
             "description": "Returns the list of monitoring items for the given userid.",
@@ -1582,11 +1582,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "f63976168545580a1aaee360bff8afb1",
+            "id": "ff9ae71e0f59d554590c2b06cb2b6e5b",
             "name": "Monitors \/ Unmonitors the list of objects for the given userid.",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/{userid}\/objects",
             "description": "Monitors \/ unmonitors the list of objects for the given userid..",
@@ -1627,11 +1627,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9e76f5dde31b862652a99fd0df0839b8",
+            "id": "33365cff1c4d15bfb7db6ed59088fecc",
             "name": "Monitoring the current object or not for the given user id (true \/ false)",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/{userid}\/objects\/{objectid}",
             "description": "Monitoring the current object or not for the given user id (true \/ false).",
@@ -1665,11 +1665,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a24b8bc03a303f28a0ac6915da7f713f",
+            "id": "d3321d0d40bfa033fe9165566eb4cc94",
             "name": "Monitors the current object for the given userid.",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/{userid}\/objects\/{objectid}",
             "description": "Monitors the current object for the given userid..",
@@ -1703,11 +1703,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "ca120c2e30bf7a1eec61fa442ce9697e",
+            "id": "3a31ce48340c971f9a1d6919c3840033",
             "name": "UnMonitors the current object for given userid",
             "url": "https\/ctfrest\/foundation\/v1\/monitoring\/users\/{userid}\/objects\/{objectid}",
             "description": "Unmonitors the current object for given userid.",
@@ -1741,11 +1741,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "47e0fea23c613ef4df0b811e9cc55aac",
+            "id": "cf03e714c47fb51408fd309e139c57cc",
             "name": "Gets recent object list for the current user",
             "url": "https\/ctfrest\/foundation\/v1\/myself\/recent\/objects",
             "description": "Gets recent object list for the current user.",
@@ -1772,11 +1772,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "056eba2ef1e69679a3f9a66ec95ffb66",
+            "id": "ddc53f97dcafa08daf6b6a5fae42c3f8",
             "name": "Gets recent project list for the current user",
             "url": "https\/ctfrest\/foundation\/v1\/myself\/recent\/projects",
             "description": "Gets recent project list for the current user.",
@@ -1803,11 +1803,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "e9dc57a0cfec201de59d9f74aaff52a6",
+            "id": "1000afa14ce94b046188e791cf2c0139",
             "name": "Edit a comment added by the same user, on the given artifact id",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{artifactId}\/comments\/{commentId}\/edit",
             "description": "Edit a comment added by the same user, on the given artifact id.",
@@ -1848,11 +1848,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "4dd13a83cd1a59594a5d891de143b7d4",
+            "id": "14985a40febae2898ba7afb0c9dcf6cc",
             "name": "Gets the association information for the given object id",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/associations",
             "description": "Gets the association information for the given object id.",
@@ -1914,11 +1914,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "b84c2790a6f9f4fd1e1da224307b5adf",
+            "id": "7f94ef5d3fa5f329226ee92b5d6371ef",
             "name": "Creates association",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/associations\/{targetid}",
             "description": "Creates association.",
@@ -1959,11 +1959,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "6116d5970c7945276f9eca9639103338",
+            "id": "16f7b484e882bb700bb3c64a27c44668",
             "name": "Deletes association",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/associations\/{targetid}",
             "description": "Deletes association.",
@@ -1997,11 +1997,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "45931064bfcfcf5395452555b5526e17",
+            "id": "540ac6ef6f8c81fbf4d4f2274d59ef46",
             "name": "Gets a collection of audit transactions performed on the specified TeamForge object",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/auditlog",
             "description": "Gets a collection of audit transactions performed on the specified teamforge object.",
@@ -2042,11 +2042,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "59f2a7a7a726c180adcb70d66a912db4",
+            "id": "4faae1fa022a8cab7fdae6fc901c5072",
             "name": "Gets the comments on the given object id",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/comments",
             "description": "Gets the comments on the given object id.",
@@ -2094,11 +2094,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9ac63d3208ec76a2c004cd6f555ed071",
+            "id": "b342a91264172b1f8e9be00cf2d7d6ec",
             "name": "Posts a comment on the given object id",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/comments",
             "description": "Posts a comment on the given object id.",
@@ -2132,11 +2132,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "e165edfdd0e9e3ecc25488a3806281d2",
+            "id": "53770d043496910e9fddae5313c5e561",
             "name": "Gets delivery information for the given object",
             "url": "https\/ctfrest\/foundation\/v1\/objects\/{objectid}\/delivery",
             "description": "Gets delivery information for the given object.",
@@ -2163,11 +2163,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c4161d0db12a90d12bd6c23d53de5ced",
+            "id": "f2615a5878972dd9359080ede6b0182d",
             "name": "Check Baseline Permission for given project",
             "url": "https\/ctfrest\/foundation\/v1\/permission\/{projectid}\/{folderPath}\/baseline",
             "description": "Check baseline permission for given project.",
@@ -2201,11 +2201,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "e6c2f5368f9fcede59428f215d9e21d8",
+            "id": "a822c9dca130932c0d4af1c8f5cf320b",
             "name": "Gets paginated project group list",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups",
             "description": "Gets paginated project group list.",
@@ -2246,11 +2246,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "fbd3a7d22f2364dccf65061b9293a9db",
+            "id": "80e33097ca364a7a9b044f5432378143",
             "name": "Creates project group",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups",
             "description": "Creates project group.",
@@ -2277,11 +2277,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "14827c4360cf330f997d2d8b7badd182",
+            "id": "b764c43c4da38a5137d6607c081a4128",
             "name": "Gets project group information",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}",
             "description": "Gets project group information.",
@@ -2308,11 +2308,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d77323eda1f6557bd3541264e2e4fca3",
+            "id": "6aa555bd7c5ba1a95979937d99a472d0",
             "name": "Deletes a project group",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}",
             "description": "Deletes a project group.",
@@ -2346,11 +2346,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c20f8238603688c937d2b3115e5fdd8e",
+            "id": "d2dad4746d694f43aded26ae61476182",
             "name": "Updates project group data",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}",
             "description": "Updates project group data.",
@@ -2391,11 +2391,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "716b7bdb5c02c256a296ecd9b6214d8b",
+            "id": "1532c2bd27939c8da88b06baa0d8fa68",
             "name": "Gets project group admins",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/admins",
             "description": "Gets project group admins.",
@@ -2422,11 +2422,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "615a3393cd408a07bfb76e2dcaa86d5d",
+            "id": "6cc94336a29fedd173247848e8829a64",
             "name": "Adds project group admin",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/admins\/{username}",
             "description": "Adds project group admin.",
@@ -2460,11 +2460,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "64d5b66cc80013512188031ef4aea3a4",
+            "id": "7a4784fdb745cc96d12930dd4728b190",
             "name": "Removes project group admin",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/admins\/{username}",
             "description": "Removes project group admin.",
@@ -2498,11 +2498,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "cf79b99c51ae903642af1f01bf579ca5",
+            "id": "a4ec22116705cd958f766668e9ff03fa",
             "name": "Gets project group members",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/members",
             "description": "Gets project group members.",
@@ -2529,11 +2529,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "af203b73d23169da7514c0445f000fb1",
+            "id": "835b64270c83fc00c7c9e3ecfe41f68d",
             "name": "Adds project group member",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/members\/{username}",
             "description": "Adds project group member.",
@@ -2567,11 +2567,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9743a2bdbb2e6bbbed44b7a54fa903b6",
+            "id": "12cc9557ea542bb43a81faa0056f5b8c",
             "name": "Removes project group member",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/members\/{username}",
             "description": "Removes project group member.",
@@ -2605,11 +2605,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a908271b245c9dfe52e2d832d1ca985d",
+            "id": "38135b5918f40e7df093326a1a2e5647",
             "name": "Gets project group projects",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/projects",
             "description": "Gets project group projects.",
@@ -2636,11 +2636,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "240972dc7dab400257e8f3c7878fbf86",
+            "id": "2ea35507eadcb9727d1e4e9d49fbaaa7",
             "name": "Adds project to project group",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/projects\/{projectid}",
             "description": "Adds project to project group.",
@@ -2674,11 +2674,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d1f910330ca143d22783a14df67d82a0",
+            "id": "f84489f453ea4c972c3951328064d9ac",
             "name": "Removes project from group",
             "url": "https\/ctfrest\/foundation\/v1\/projectgroups\/{projectgroupid}\/projects\/{projectid}",
             "description": "Removes project from group.",
@@ -2712,11 +2712,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "37813ac19b893fdfe7892aab4ead5633",
+            "id": "4e7b90f74ffb96374734a467972db196",
             "name": "Gets paginated project list.",
             "url": "https\/ctfrest\/foundation\/v1\/projects",
             "description": "Gets paginated project list..",
@@ -2771,11 +2771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "f000e270f7d118c443462f052c723413",
+            "id": "28e70f1433ceee904636b68677ff1a6b",
             "name": "Creates project",
             "url": "https\/ctfrest\/foundation\/v1\/projects",
             "description": "Creates project.",
@@ -2802,11 +2802,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9ef90ee14e7f5985092d2dff929eeffd",
+            "id": "fa5dc45a1624903ae4ef5cf2395ba49e",
             "name": "Gets paginated project request list",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/requests",
             "description": "Gets paginated project request list.",
@@ -2840,11 +2840,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d37060eca5242f3b30648479dcfd2e77",
+            "id": "64c7002b1aaac1b9652f433aa0f279a4",
             "name": "Gets the number of pending project requests",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/requests\/count",
             "description": "Gets the number of pending project requests.",
@@ -2863,11 +2863,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7bf56aeef709bc76fa72d1b6b9940daa",
+            "id": "58978a8df1c0c5b233786a1c628eb9ee",
             "name": "Gets project information",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}",
             "description": "Gets project information.",
@@ -2894,11 +2894,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "932157571ff7e25a00a09c98afcb021d",
+            "id": "50cf9da1121c394199ee1a22a1ae233e",
             "name": "Deletes a project",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}",
             "description": "Deletes a project.",
@@ -2939,11 +2939,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "3ac78443265a280c912c3713222cc4b2",
+            "id": "c9c0165649e5fa9e751a0ccf0fa88ec8",
             "name": "Updates project data",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}",
             "description": "Updates project data.",
@@ -2984,11 +2984,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "6c2db73acf86f0c7ea6997bb0593c8b8",
+            "id": "cf0a1f9111a82d1f9e3bc0a9676ac452",
             "name": "Gets project administrators",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/admins",
             "description": "Gets project administrators.",
@@ -3015,11 +3015,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "e0dec0c0bc872c6fd2b9eede9a4286d2",
+            "id": "a6d4ec003257b592650f7a26450b3b99",
             "name": "Gets project disk usage in bytes",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/diskusage",
             "description": "Gets project disk usage in bytes.",
@@ -3046,11 +3046,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "257e64ec8f0a0ce70468606ed82148fe",
+            "id": "7f0b77c47b250c89f81ad5ae0ded29bc",
             "name": "Locks a project",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/lock",
             "description": "Locks a project.",
@@ -3077,11 +3077,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a70b8f32e5ecf092b4ec84d6d00cf2b4",
+            "id": "1ce93fe1d781efa44798bbcf9a9fb7bc",
             "name": "Unlocks a project",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/lock",
             "description": "Unlocks a project.",
@@ -3108,11 +3108,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "20d45da9edac21109d76ecbdfe9e934d",
+            "id": "45852a1109309e307f35396ff21efe8f",
             "name": "Gets project members",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/members",
             "description": "Gets project members.",
@@ -3167,11 +3167,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "3d6720809af1ec04d6d9be2601206b6b",
+            "id": "16e6cd8f3e18c1a67107190c07ee82df",
             "name": "Gets project role list",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles",
             "description": "Gets project role list.",
@@ -3205,11 +3205,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "33c6c71ac2e3b77a9e8da334b71347d4",
+            "id": "9b4eadb2e324070f4d554ff07cc89250",
             "name": "Creates project role.",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles",
             "description": "Creates project role..",
@@ -3243,11 +3243,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c878fd6ec484861db78fb9a7e381837e",
+            "id": "bfd45b54d733d8938705ff9a19e73d5e",
             "name": "Get roles by user",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/by-users",
             "description": "Get roles by user.",
@@ -3281,11 +3281,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "b84209f4fa7c9d54f6bc6c3e993ffb88",
+            "id": "69a3f8500b37ce7f595d9d87b6368c70",
             "name": "Gets inherited project role list",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/inherited-roles",
             "description": "Gets inherited project role list.",
@@ -3312,11 +3312,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "dbbf7b921646cd586fdfe23a4b1a68e9",
+            "id": "360581a20bbf33c9c436a838550fe43f",
             "name": "Deletes a project role",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}",
             "description": "Deletes a project role.",
@@ -3350,11 +3350,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "0644f73b0d1d2c07f8efb6baa911ebfa",
+            "id": "983aa9a14970e49334e136e5f45a9349",
             "name": "Updates project role.",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}",
             "description": "Updates project role..",
@@ -3402,11 +3402,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "b815ddea5185095258e087ffd1868205",
+            "id": "bb536e1de0a92d86c1a8714c52853e4f",
             "name": "Gets whether a role is granted automatically in a project or not.",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}\/auto-grant",
             "description": "Gets whether a role is granted automatically in a project or not..",
@@ -3440,11 +3440,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "8a94927f29186249c41384565201b9af",
+            "id": "3f440ed8f34f3a291f116c333fcf458f",
             "name": "Grant a role automatically in a given project",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}\/auto-grant",
             "description": "Grant a role automatically in a given project.",
@@ -3478,11 +3478,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "1749c02863977a7e0ba51cc85d9ed6ce",
+            "id": "d5b3f21afb6e8e740049de51a05e0ab7",
             "name": "Stop granting a role automatically in a given project",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}\/auto-grant",
             "description": "Stop granting a role automatically in a given project.",
@@ -3516,11 +3516,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "bfe527a6f07c7b53fbc01f29be80119d",
+            "id": "b88b0be443c073af9f69d5cdb64ba5e6",
             "name": "Gets project role members",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}\/members",
             "description": "Gets project role members.",
@@ -3554,11 +3554,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a2c57cba0e6ddaddc526a9f71f3523cf",
+            "id": "3be71793001fb67b4c53b25fef242047",
             "name": "Add user to project role",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}\/members\/{username}",
             "description": "Add user to project role.",
@@ -3599,11 +3599,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "b2470854b255a06eab9205e44e57a8ed",
+            "id": "7b531bce2904157a26e28bcbb5a8c4e8",
             "name": "Removes user from a project role",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/roles\/{roleid}\/members\/{username}",
             "description": "Removes user from a project role.",
@@ -3644,11 +3644,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c6a2f4c5f8de68b4a3806f0e75d2f2cd",
+            "id": "4f575c6403db083963a49666a79e7a97",
             "name": "Gets subproject list.",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/subprojects",
             "description": "Gets subproject list..",
@@ -3689,11 +3689,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "32707615908705742b944424dc19b62c",
+            "id": "7f7fa647de2e5cbf594f96ebd793fae0",
             "name": "Adds project member",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/{username}",
             "description": "Adds project member.",
@@ -3727,11 +3727,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "521245283c24fb7a5a61d5326293ad5e",
+            "id": "070352d9fa42ec73290e9c2386b15a3e",
             "name": "Removes project member",
             "url": "https\/ctfrest\/foundation\/v1\/projects\/{projectid}\/{username}",
             "description": "Removes project member.",
@@ -3765,11 +3765,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7ae11565cb7675e99f1bf203c18dcb5c",
+            "id": "4790d94704ac0c14c6a7b24f993504e7",
             "name": "Gets paginated project template list.",
             "url": "https\/ctfrest\/foundation\/v1\/projecttemplates",
             "description": "Gets paginated project template list..",
@@ -3810,11 +3810,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "52bcb40eb4e720381716b6648b804087",
+            "id": "54ba0a99625d0db25bfa5b322153442b",
             "name": "Gets global\/site role list",
             "url": "https\/ctfrest\/foundation\/v1\/roles",
             "description": "Gets global\/site role list.",
@@ -3848,11 +3848,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a2e89d82559f9650add24d6ad1ec583e",
+            "id": "bee37927b11135a470828bd4eb5f0a8c",
             "name": "Creates role.",
             "url": "https\/ctfrest\/foundation\/v1\/roles",
             "description": "Creates role..",
@@ -3879,11 +3879,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "13e47b2b543714462a5a2ee3be5b9aa0",
+            "id": "f7a7ffb74d157351431bac09ab415d76",
             "name": "Gets role data.",
             "url": "https\/ctfrest\/foundation\/v1\/roles\/{roleid}",
             "description": "Gets role data..",
@@ -3910,11 +3910,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "138dac247f636cef1b5a3a6cad0f426a",
+            "id": "76e7105bab765c0e21b6043e45e702b8",
             "name": "Deletes a role",
             "url": "https\/ctfrest\/foundation\/v1\/roles\/{roleid}",
             "description": "Deletes a role.",
@@ -3941,11 +3941,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "fb10b0c45051c842b4da7df06b51e2ec",
+            "id": "10e25f4865a9dfaa5ed1dc50e2fdc3f7",
             "name": "Updates role.",
             "url": "https\/ctfrest\/foundation\/v1\/roles\/{roleid}",
             "description": "Updates role..",
@@ -3986,11 +3986,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "2aca09b0a63c276e50941dc8b2885e0c",
+            "id": "9b8a8f1941b8edc26a6aee8f5c3009dc",
             "name": "Gets role members",
             "url": "https\/ctfrest\/foundation\/v1\/roles\/{roleid}\/members",
             "description": "Gets role members.",
@@ -4017,11 +4017,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "83dacdc71c556f88539e050ab7d5e1e2",
+            "id": "dda80ae50e916d1358a0819b7ff0137b",
             "name": "Add user to a role",
             "url": "https\/ctfrest\/foundation\/v1\/roles\/{roleid}\/members\/{username}",
             "description": "Add user to a role.",
@@ -4055,11 +4055,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "8adb4def16202ccc5366a54ec98f9bb5",
+            "id": "365b9961843dd706ee3526102bdc0333",
             "name": "Removes user from a role",
             "url": "https\/ctfrest\/foundation\/v1\/roles\/{roleid}\/members\/{username}",
             "description": "Removes user from a role.",
@@ -4093,11 +4093,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "0882fb57edad787cbb298206b6aab161",
+            "id": "ac10569617bd79a204fdccc712d29d25",
             "name": "Gets TeamForge server information",
             "url": "https\/ctfrest\/foundation\/v1\/server",
             "description": "Gets teamforge server information.",
@@ -4116,11 +4116,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "dd59ac76bcdef47b2f49941c9dac9593",
+            "id": "e66c612abc3ce57b9a23250760d78374",
             "name": "Gets the health of the CTF core",
             "url": "https\/ctfrest\/foundation\/v1\/server\/health",
             "description": "Gets the health of the ctf core.",
@@ -4161,11 +4161,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "73abfbdc441c9c786dea880549d5edd3",
+            "id": "10452d143ee83fc7d6ddad4d3270f00c",
             "name": "Sets\/Updates license key",
             "url": "https\/ctfrest\/foundation\/v1\/server\/licensekey",
             "description": "Sets\/updates license key.",
@@ -4192,11 +4192,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "2e09b44b3e5ad4a8125eae63d3009270",
+            "id": "0243b5f90a0c8a77dde55b1bcd8a63fc",
             "name": "Gets valid license types",
             "url": "https\/ctfrest\/foundation\/v1\/server\/licensetypes",
             "description": "Gets valid license types.",
@@ -4215,11 +4215,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "646a2d87c00fbbea5701cdf26524020c",
+            "id": "d37ed9331cbde7b813a3063b6b8045b6",
             "name": "Gets paginated user list",
             "url": "https\/ctfrest\/foundation\/v1\/users",
             "description": "Gets paginated user list.",
@@ -4288,11 +4288,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "ace1ced064878b82014d78331acca7b1",
+            "id": "4dd25b97105b250bc5229e3df973bc79",
             "name": "Creates a user",
             "url": "https\/ctfrest\/foundation\/v1\/users",
             "description": "Creates a user.",
@@ -4319,11 +4319,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7d2091275cecc3954d7f258618c30d20",
+            "id": "02093b188e04174a3b51f9267eef65aa",
             "name": "Gets user data by email",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-email\/{email}",
             "description": "Gets user data by email.",
@@ -4350,11 +4350,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "37f525076abb05b65ffa2551dc23bc0d",
+            "id": "14cd40e20030c5c2fc6394b68884f507",
             "name": "Gets user data by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}",
             "description": "Gets user data by username.",
@@ -4381,11 +4381,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9d82bbd740bbb125e0e82b099b7f667d",
+            "id": "91b41dc3509ba9d73a224a80ad311f21",
             "name": "Deletes a user by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}",
             "description": "Deletes a user by username.",
@@ -4412,11 +4412,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "4487e01d983ec1c231f5b0c8068c1bca",
+            "id": "ead773cb03e49b5f2871451ed28f581b",
             "name": "Updates a user by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}",
             "description": "Updates a user by username.",
@@ -4457,11 +4457,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c7ccb69501adfe4b5c795969eff3f0f7",
+            "id": "f36a84cd71d0019b9024703392c927cb",
             "name": "Gets alternative license types by username.",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/alternative-licensetypes",
             "description": "Gets alternative license types by username..",
@@ -4488,11 +4488,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7f684bb9dfe879080520767d1310d158",
+            "id": "f408afde137c63c6e131ad34b213e1c8",
             "name": "Gets authorization keys by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/authorization-keys",
             "description": "Gets authorization keys by username.",
@@ -4519,11 +4519,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c7f0332c19b50cb034a47e5018905cbe",
+            "id": "54ea71c58e9f09ffe9a49c6ddb1b3f5f",
             "name": "Sets authorization keys by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/authorization-keys",
             "description": "Sets authorization keys by username.",
@@ -4557,11 +4557,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "018efc699d5c6cf8fb35480904f0e6d5",
+            "id": "acbde6ff7366795a18fa1f191860a4e3",
             "name": "Gets a user's group list by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/groups",
             "description": "Gets a user's group list by username.",
@@ -4588,11 +4588,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "aa42c40a78863211788dc7bf2c205cc7",
+            "id": "28c0213498ce009959730e5aa6f6ac58",
             "name": "Add user to a user group by user name",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/groups\/{groupid}",
             "description": "Add user to a user group by user name.",
@@ -4626,11 +4626,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "4c6e75404c8259ea886bee9e70b8997b",
+            "id": "484dc9ff9fe7d1b3622b9ab4b9210bc5",
             "name": "Resets user password by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/password",
             "description": "Resets user password by username.",
@@ -4664,11 +4664,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "ceef5829990a600381d0686fa2786542",
+            "id": "fce84d8abea432c1fb6bf250e1288c22",
             "name": "Gets preferences by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/preferences",
             "description": "Gets preferences by username.",
@@ -4695,11 +4695,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "d22e008a430e91429f7a355203a89c6f",
+            "id": "1217116f7830922a7503b9948aba50d2",
             "name": "Sets preferences by user name",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/preferences",
             "description": "Sets preferences by user name.",
@@ -4733,11 +4733,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c30992268461cb4ccb2abdb80adb19bb",
+            "id": "12fd7f50ade8e193b5eeea80e56d1714",
             "name": "Gets preference by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/preferences\/{preference}",
             "description": "Gets preference by username.",
@@ -4771,11 +4771,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "1858df564e78a7f60cc0bee59690645c",
+            "id": "4456508bffabf90da79094629d7b10e3",
             "name": "Uploads and sets profile picture by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/profile-picture",
             "description": "Uploads and sets profile picture by username.",
@@ -4809,11 +4809,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7d96a3fd020248261705d3c8e0568a26",
+            "id": "15f0de0785544436364ed6a9afef6e1a",
             "name": "Deletes profile picture by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/profile-picture",
             "description": "Deletes profile picture by username.",
@@ -4840,11 +4840,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "4428bccfa4ca8aa7de673ce90bb045a8",
+            "id": "030ce8aa955a414639a9b5fad26820a8",
             "name": "Gets a user's project list by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/projects",
             "description": "Gets a user's project list by username.",
@@ -4885,11 +4885,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "8b195ab50cacf7a7c29b5f279eec97d1",
+            "id": "eb1a32f59fe908a52ed0a0ed8ed8b627",
             "name": "Adds a user to specified project's member list by username",
             "url": "https\/ctfrest\/foundation\/v1\/users\/by-username\/{username}\/projects\/{projectid}",
             "description": "Adds a user to specified project's member list by username.",
@@ -4923,11 +4923,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7a02e56a8c8f23ccc7c514eb9a31bcc0",
+            "id": "91849ab1b20cdb20b902cc0eab5aca57",
             "name": "Gets user data for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself",
             "description": "Gets user data for current user.",
@@ -4946,11 +4946,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "38fe55d3f4354dbab480562f7fb950e9",
+            "id": "2702809ccc2e0d348ea7b4027a6552b7",
             "name": "Updates current user data",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself",
             "description": "Updates current user data.",
@@ -4984,11 +4984,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "62923219f6c2e368cd66a44fba806501",
+            "id": "82938f5d470976e9767ff567804cb8fa",
             "name": "Gets alternative license types for current user.",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/alternative-licensetypes",
             "description": "Gets alternative license types for current user..",
@@ -5007,11 +5007,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "9352c23a5bac528e4b586850453cfbda",
+            "id": "e921c2a924f942ff68911c920809359a",
             "name": "Gets authorization keys for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/authorization-keys",
             "description": "Gets authorization keys for current user.",
@@ -5030,11 +5030,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "35bd30f06593af64a901436234ffc042",
+            "id": "ca02c9750b2e37e277352b0b1d837918",
             "name": "Sets authorization keys for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/authorization-keys",
             "description": "Sets authorization keys for current user.",
@@ -5061,11 +5061,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "fe193c0afa31edaf92bd84c9cd411d27",
+            "id": "bf6e23ef1d268f5af80008b07f8b59d6",
             "name": "Gets current user's group list",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/groups",
             "description": "Gets current user's group list.",
@@ -5084,11 +5084,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "420af3570e2d5546aedab50f387c30f0",
+            "id": "f6cdebe6d9713654f3cbfff1f2ea39af",
             "name": "Add current user to a user group",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/groups\/{groupid}",
             "description": "Add current user to a user group.",
@@ -5115,11 +5115,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "3823c12d3a0e2620288741ed954ce1e6",
+            "id": "a4d1c2909830c5337adfec91f4659ff2",
             "name": "Resets user password for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/password",
             "description": "Resets user password for current user.",
@@ -5146,11 +5146,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a59e775c8841f960c30dd79817bc0032",
+            "id": "9d00cba2f62f311f4aaa4d06a0429162",
             "name": "Gets preferences for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/preferences",
             "description": "Gets preferences for current user.",
@@ -5169,11 +5169,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "559687993a1893e5511e9cb13ac2bd2e",
+            "id": "82521d176ab6f6450477b5c69d48e513",
             "name": "Sets preferences for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/preferences",
             "description": "Sets preferences for current user.",
@@ -5200,11 +5200,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "7b60841134a0cb5f7217138d3e9bb259",
+            "id": "14b1b2a23a4e868f1d03f92de0c7c7ae",
             "name": "Gets preference for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/preferences\/{preference}",
             "description": "Gets preference for current user.",
@@ -5231,11 +5231,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "455578597cb074aa7219f6e1a3f32952",
+            "id": "762f4366ce7d1adf1290e86ff74b2b9e",
             "name": "Uploads and sets profile picture for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/profile-picture",
             "description": "Uploads and sets profile picture for current user.",
@@ -5262,11 +5262,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "be1d428ac54773a30a39bfe172ed1ec6",
+            "id": "db7c6a75c80b5e0d4a14c29d0daaacf0",
             "name": "Deletes profile picture for current user",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/profile-picture",
             "description": "Deletes profile picture for current user.",
@@ -5285,11 +5285,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "05c22cc38dcc7d0e82d16f050323bd0c",
+            "id": "9220a3c9bbdd4baaeaef7801218a1d55",
             "name": "Gets current user's project list",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/projects",
             "description": "Gets current user's project list.",
@@ -5323,11 +5323,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c7d6364f486854eccd92f1d75c654914",
+            "id": "61fbb26bc0ba3d9e47118b6a34f7e58d",
             "name": "Adds current user to specified project's member list",
             "url": "https\/ctfrest\/foundation\/v1\/users\/myself\/projects\/{projectid}",
             "description": "Adds current user to specified project's member list.",
@@ -5354,11 +5354,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "a3110a95561062b958ab33ed09158921",
+            "id": "85ad99b9825f174b10c716f081cac705",
             "name": "Gets user data by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}",
             "description": "Gets user data by user id.",
@@ -5385,11 +5385,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "07e693abbf72c88df36250342f5e08ca",
+            "id": "ce8c874c1d8167102ed3d4f778e20109",
             "name": "Deletes a user by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}",
             "description": "Deletes a user by user id.",
@@ -5416,11 +5416,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "1e0bed659ecf37faf4d80e1f5ee7d46d",
+            "id": "e644c896f60583653dd97deff5533daa",
             "name": "Updates a user by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}",
             "description": "Updates a user by user id.",
@@ -5461,11 +5461,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "f402668633c4250925c0f275d14cab44",
+            "id": "11036f6ec38f54e73a923736b5069e3b",
             "name": "Gets alternative license types by userid.",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/alternative-licensetypes",
             "description": "Gets alternative license types by userid..",
@@ -5492,11 +5492,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "12a1e9b3a9f6bc365680fd7c8363eacc",
+            "id": "1ea00e93f15c0964c1e3fc99cfd57801",
             "name": "Gets authorization keys by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/authorization-keys",
             "description": "Gets authorization keys by user id.",
@@ -5523,11 +5523,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "5246620661a2ade564089a8eddbcfd1c",
+            "id": "e5812697f118f5844c9ead1b2eba575d",
             "name": "Sets authorization keys by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/authorization-keys",
             "description": "Sets authorization keys by user id.",
@@ -5561,11 +5561,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "87a69ee7f759c7d477187c11ecf07f38",
+            "id": "7794f2b71a7aa3c2523e7d2cc4f279c1",
             "name": "Gets a user's group list by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/groups",
             "description": "Gets a user's group list by user id.",
@@ -5592,11 +5592,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "e0125ba921d2e69ab18abab5be3d9dbf",
+            "id": "a5522e710147cf931b0b580308bd0b27",
             "name": "Add user to a user group by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/groups\/{groupid}",
             "description": "Add user to a user group by user id.",
@@ -5630,11 +5630,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "52a5a057910d5ce7a60af22617165672",
+            "id": "2d154954d1eacf5274d6a6336298958f",
             "name": "Resets user password by userid",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/password",
             "description": "Resets user password by userid.",
@@ -5668,11 +5668,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "c6929cbf9e747e27c4f0da8afbb9e932",
+            "id": "a1f023b2a69e31776f0dd3fb38d1b758",
             "name": "Gets preferences by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/preferences",
             "description": "Gets preferences by user id.",
@@ -5699,11 +5699,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "ff7fc206b108b93e9c666f8b3d8693c5",
+            "id": "8e8a65bf8ab2b9765b5bfccfc3164c6c",
             "name": "Sets preferences by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/preferences",
             "description": "Sets preferences by user id.",
@@ -5737,11 +5737,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "eac7d13c0793e4a01c2a38932be98465",
+            "id": "4ac7e46b36b844ecfa08d367e44df921",
             "name": "Gets preference by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/preferences\/{preference}",
             "description": "Gets preference by user id.",
@@ -5775,11 +5775,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "16c1d9827ac58c7c1aacb1d1147c282a",
+            "id": "66c2b1c2de6bf517dcd2d087ec28ceb3",
             "name": "Uploads and sets profile picture by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/profile-picture",
             "description": "Uploads and sets profile picture by user id.",
@@ -5813,11 +5813,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "df3ad2117b50d89326798184582ae10c",
+            "id": "19fb846c029c09b94614b8934be14a78",
             "name": "Deletes profile picture by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/profile-picture",
             "description": "Deletes profile picture by user id.",
@@ -5844,11 +5844,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "8261e6461f97971342204840d7459f5d",
+            "id": "aceb66d80543e65b2b51a97b1c2ac9f2",
             "name": "Gets a user's project list by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/projects",
             "description": "Gets a user's project list by user id.",
@@ -5889,11 +5889,11 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         },
         {
-            "id": "01788bc4fbbdbdaf478b484e51eaf091",
+            "id": "0f71727329d6b64b2c7457c85e8c5f7f",
             "name": "Adds a user to specified project's member list by user id",
             "url": "https\/ctfrest\/foundation\/v1\/users\/{userid}\/projects\/{projectid}",
             "description": "Adds a user to specified project's member list by user id.",
@@ -5927,7 +5927,7 @@
             "responses": [],
             "currentHelper": null,
             "helperAttributes": null,
-            "collectionId": "391d9795ff9867036a137ee23ab08089",
+            "collectionId": "97f5d8a1e7b0229b17fa35d82dd2450e",
             "rawModeData": ""
         }
     ]
